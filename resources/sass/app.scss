@@ -7,7 +7,52 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+html, body {
+    height: 100%
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: mix($pink50, #fff, 20);
+}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid mix($pink50, #fff, 20);
+    margin: 1em 0; padding: 0; }
+
+.welcome {
+    nav {
+        .navbar-brand {
+            color: $pink50;
+            text-transform: uppercase;
+        }
+
+        .navbar-nav {
+            flex-direction: row;
+
+            .btn {
+                background-color: $pink50;
+                color: $grey900;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .main {
+        padding: 0;
+
+        h1 {
+            font-size: 72px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            display: inline;
+        }
+    }
 }
