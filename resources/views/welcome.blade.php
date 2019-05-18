@@ -25,8 +25,8 @@
         <nav class="navbar justify-content-between container">
             <a class="navbar-brand" style="color: #F5F5F5" >{{ config('app.name', 'ELO') }}</a>
             <ul class="navbar-nav ml-auto form-inline">
-                <li><a href="" class="btn mr-2">Register</a></li>
-                <li><a href="" class="btn mr-2">Sign In!</a></li>
+                <li><a href="{{ route('register') }}" class="btn mr-2">Register</a></li>
+                <li><a href="{{ route('login') }}" class="btn mr-2">Sign In!</a></li>
             </ul>
         </nav>
     </header>

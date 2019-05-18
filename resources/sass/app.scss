@@ -3,9 +3,11 @@
 
 // Variables
 @import 'variables';
+@import "variables_theme";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import "bootswatch";
 
 // Fontawesome
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
@@ -18,17 +20,17 @@ html, body {
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    color: mix($pink50, #fff, 20);
+    color: $white;
 }
 
 hr { display: block; height: 1px;
-    border: 0; border-top: 1px solid mix($pink50, #fff, 20);
+    border: 0; border-top: 1px solid $white;
     margin: 1em 0; padding: 0; }
 
 .welcome {
     nav {
         .navbar-brand {
-            color: $pink50;
+            color: $white;
             text-transform: uppercase;
         }
 
@@ -36,7 +38,7 @@ hr { display: block; height: 1px;
             flex-direction: row;
 
             .btn {
-                background-color: $pink50;
+                background-color: $white;
                 color: $grey900;
                 font-weight: bold;
             }
