@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" style="height: 100%">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="text-center h-100">
+<body class="text-center h-100" style="height: 100%">
 <main class="welcome py-4 h-100">
     <header>
         <nav class="navbar justify-content-between container">
@@ -42,9 +42,9 @@
                 <h2><i class="fas fa-fw fa-2x fa-trophy"></i></h2>
                 <h2><i class="fas fa-fw fa-2x fa-bowling-ball"></i></h2>
                 <h2><i class="fas fa-fw fa-2x fa-crosshairs"></i></h2>
+            </div>
         </div>
     </div>
 </main>
-</div>
 </body>
 </html>

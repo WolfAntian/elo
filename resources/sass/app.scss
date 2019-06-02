@@ -15,18 +15,6 @@
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
 
-html, body {
-    height: 100%
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-    color: $white;
-}
-
-hr { display: block; height: 1px;
-    border: 0; border-top: 1px solid $white;
-    margin: 1em 0; padding: 0; }
-
 .welcome {
     nav {
         .navbar-brand {
@@ -57,4 +45,8 @@ hr { display: block; height: 1px;
             display: inline;
         }
     }
+
+    hr { display: block; height: 1px;
+        border: 0; border-top: 1px solid $white;
+        margin: 1em 0; padding: 0; }
 }
