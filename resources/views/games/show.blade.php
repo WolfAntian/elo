@@ -14,9 +14,11 @@
                 <br>
                 <ul class="list-group">
                     @foreach($game->users as $user)
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <li class="list-group-item d-flex align-items-center">
                             {{ $user->name }}
-                            <span class="badge badge-primary badge-pill">{{ $user->pivot->role }}</span>
+                            &nbsp;<span class="badge badge-secondary">{{ $user->pivot->role }}</span>
+
+                            <span class="badge badge-primary float-right ml-auto">{{ $user->pivot->elo }}</span>
                         </li>
                     @endforeach
                 </ul>

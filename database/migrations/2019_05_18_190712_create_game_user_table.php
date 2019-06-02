@@ -18,6 +18,7 @@ class CreateGameUserTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('game_id');
             $table->string('role', 31);
+            $table->integer('elo')->default(1000); // starting score
             $table->timestamps();
         });
     }

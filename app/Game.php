@@ -8,6 +8,6 @@ class Game extends Model
 {
     public function users()
     {
-        return $this->belongsToMany('App\User', 'game_user')->withPivot('role');
+        return $this->belongsToMany('App\User', 'game_user')->withPivot('role', 'elo');
     }
 }
