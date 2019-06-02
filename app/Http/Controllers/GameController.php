@@ -10,6 +10,12 @@ use Illuminate\Support\Facades\Log;
 
 class GameController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('game');
+    }
+
+
     /**
      * Display a listing of the resource.
      *
